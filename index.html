@@ -5,64 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning - part 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//db.onlinewebfonts.com/c/ce7ee1905f939d4e0f4cfcb3470c4d4e?family=Old+Fenris" rel="stylesheet" type="text/css"/>
+    <style>
+        body {
+            background-color: black;
+            font-family: "Old Fenris", serif;
+            font-weight: 400;
+            line-height: 1.05;
+            text-transform: uppercase;
+            text-shadow: 3px 5px 5px rgb(0 0 0 / 50%);
+            color: #D2C8AE;
+        }
+        p {
+            color: #878582;
+        }
+        #navbaricon {
+            width: 40px;
+        }
+        .inline_p {
+            display: inline;
+            margin-left: 20px;;
+        }
+        li {
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="/">HOME</a>
-        </li>
-        <li>
-            <a href="orders.html">ORDERS</a>
-        </li>
-        <li>
-            <a href="products.html">PRODUCTS</a>
-        </li>
-        <li>
-            <a href="#">ABOUT</a>
-        </li>
-    </ul>
-    <h1>
-        Burgers
-    </h1>
-    <table>
-        <caption>Nyitvatartás:</caption>
-        <header>
-            <th>Nap</th>
-            <th>Nyitás</th>
-            <th>Zárás</th>
-        </header>
-        <tr>
-            <td>Hétfő</td>
-            <td>08:00</td>
-            <td>12:00</td>
-        </tr>
-        <tr>
-            <td>Szerda</td>
-            <td>12:00</td>
-            <td>14:00</td>
-        </tr>
-        <tr>
-            <td>Péntek</td>
-            <td>14:00</td>
-            <td>18:00</td>
-        </tr>
-    </table>
-    <ul>
-        <li>Small</li>
-        <li>Large</li>
-        <li>Xtra-Large</li>
-    </ul>
-    <h2>
-        Additions
-    </h2>
-    <ol>
-        <li>Paradicsom</li>
-        <li>Ananász</li>
-        <li>Hagyma</li>
-        <li>Sajt</li>
-    </ol>
-    <a href="#">
-        <img src="https://okosgrill.hu/wp-content/uploads/2021/07/Bacon-Burger-borsos-sajttal-okosgrill.jpg" alt="burger">
-    </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 0%;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="navbaricon" src="./images/d4icon.jpg" alt=""></a>
+          <a class="navbar-brand"> DIABLO IV </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENÜ
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">ZSOLTI</a></li>
+                  <li><a class="dropdown-item" href="#">ZOLIKA</a></li>
+                  <li><a class="dropdown-item" href="#">PISTIKE</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container" id="lopottholmi">
+        <h1>
+            Classok
+        </h1>
+        <ul>
+            <li><img src="./images/barbarian_icon.png" alt="barbarian_icon"><p class="inline_p">BARBARIAN</p></li>
+            <li><img src="./images/rogue_icon.png" alt="rogue_icon"><p class="inline_p">ROGUE</p></li>
+            <li><img src="./images/sorcerer_icon.png" alt="sorcerer_icon"><p class="inline_p">SORCERER</p></li>
+            <li><img src="./images/druid_icon.png" alt="druid_icon"><p class="inline_p">DRUID</p></li>
+            <li><img src="./images/necromancer_icon.png" alt="necromancer_icon"><p class="inline_p">NECROMANCER</p></li>
+        </ul>
+    </div>
 </body>
 </html>
